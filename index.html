@@ -1,114 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <title>Frontend Mentor | Intro component with sign up form</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="main.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-  <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Homework</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&family=Vidaloka&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
-
 <body>
-  <div>
-
-  </div>
-  <div>
-  </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="center col-6 first-div">
-
-        <h1 class="main-title">
-          Learn to code by watching others
-        </h1>
-
-        <p>
-          See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
-          but understanding how developers think is invaluable.
-        </p>
-
-      </div>
-      <div class="w-100 breakpoint"></div>
-      <div class="center col-6 second-div">
-        <div>
-          <button type="button" class="btn try-it-free-btn">
-            <span>Try it free 7 days</span><br class="breakpoint"/> then $20/mo. thereafter
-          </button>
+      <!--Nav Begin-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand mx-5" href="#"> <img src="https://cdn-icons-png.flaticon.com/512/2541/2541991.png" width="40" alt="homework tracker logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Your homework</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Colab</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pro pricing</a>
+            </li>
+          </ul>
         </div>
-
-        <div class="form-div">
-          <form class="needs-validation" novalidate>
-            <div class="form-group">
-              <input required type="text"  aria-label="fn" class="form-control" name="First Name" placeholder="First Name"
-                id="first-name">
-              <div class="invalid-feedback">
-                First Name cannot be empty
-              </div>
+      </nav>
+      <!--End Nav-->
+      <!--Hero begin-->
+      <section class="bgimage">
+        <div class="container-fluid">
+          <div class="row hero text-center">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+              <h1 class="display-1">Your homework tracker</h1>
+              <p><mark class="white">Keep track of your progress and colab with others!</mark></p>
+              <p><a href="#" class="btn btn-primary" id="try">Try pro »</a></p>
             </div>
-            <div class="form-group">
-              <input required type="text" aria-label="ln" class="form-control" name="Last Name" placeholder="Last Name" id="last-name">
-              <div class="invalid-feedback">
-                Last Name cannot be empty
-              </div>
-            </div>
-            <div class="form-group">
-              <!-- <input type="email"  id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address"> -->
-              <input required type="email" aria-label="email" class="form-control" name="Email Address" placeholder="Email Address"
-                id="email-address">
-              <div class="invalid-feedback">
-                Looks like this is not an email
-              </div>
-            </div>
-            <div class="form-group">
-              <!-- <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"> -->
-              <input required type="password" aria-label="pswd" class="form-control" name="Password" placeholder="Password" id="password">
-              <div class="invalid-feedback">
-                Password cannot be empty
-              </div>
-            </div>
-            <div class="form-group claim-btn-div">
-              <button type="submit" class="btn claim-btn">CLAIM YOUR FREE TRIAL</button>
-            </div>
-          </form>
-          <div class="terms-text">
-            <p>
-              By clicking the button, you are agreeing to our <span>Terms and Services</span>
-            </p>
           </div>
         </div>
+      </section>
 
+         <!--End hero-->
+         <!--Three buttons start-->
+         <div class="container my-5">
+          <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 text-center">
+            <div class="col">
+              <button type="button" class="btn btn-outline-primary btn-lg w-75 fw-bold">View all homework</button>
+            </div>
+            <div class="col">
+              <button type="button" class="btn btn-outline-primary btn-lg w-75 fw-bold">Calendar</button>
+            </div>
+            <div class="col">
+              <button type="button" class="btn btn-outline-primary btn-lg w-75 fw-bold">Reminders</button>
+            </div>
+          </div>
+        </div>
+  
+         <!--End three buttons-->
+
+         <!--Pinned start-->
+         <div class="container">
+          <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2">
+            <div class="col-sm-2">
+         <h2 class="display-4 text-lg-center"><span class="pin"><img src="https://cdn-icons-png.flaticon.com/512/233/233833.png" class="pin" width="40" alt="pin">Pinned reminders</h2></span>
+<!--Table begin-->
+
+<table class="table table-striped bg-light">
+  <thead>
+    <tr class=" table-bordered">
+      <th scope="col">Reminder</th>
+      <th scope="col">Due Date</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td data-label="Reminder"><a href="#">Chemestry: Module 4</a></td>
+      <td data-label="Due Date">04/05/2023</td>
+      <td data-label="Action">
+      <button type="button" class="btn btn-success">✓</button>
+      <button type="button" class="btn btn-primary">↑</button>
+      <button type="button" class="btn btn-info">↓</button>
+      <button type="button" class="btn btn-danger">🗑</button>
+    </td>
+    </tr>
+    <tr>
+      <td scope="row" data-label="Reminder"><a href="#">Art History: Greece</a></td>
+      <td data-label="Due Date">13/05/2023</td>
+      <td data-label="Action">
+        <button type="button" class="btn btn-success">✓</button>
+        <button type="button" class="btn btn-primary">↑</button>
+        <button type="button" class="btn btn-info">↓</button>
+        <button type="button" class="btn btn-danger">🗑</button>
+      </td>
+    </tr>
+    <tr>
+      <td scope="row" data-label="Reminder"><a href="#">Geography: Volcanoes & earthquakes</a></td>
+      <td data-label="Due Date">17/05/2023</td>
+      <td data-label="Action">
+        <button type="button" class="btn btn-success">✓</button>
+        <button type="button" class="btn btn-primary">↑</button>
+        <button type="button" class="btn btn-info">↓</button>
+        <button type="button" class="btn btn-danger">🗑</button>
+      </td>
+    </tr>
+    <tr>
+      <td scope="row" data-label="Reminder"><a href="#">Chemestry: Module 5</a></td>
+      <td data-label="Due Date">02/06/2023</td>
+      <td data-label="Action">
+        <button type="button" class="btn btn-success">✓</button>
+        <button type="button" class="btn btn-primary">↑</button>
+        <button type="button" class="btn btn-info">↓</button>
+        <button type="button" class="btn btn-danger">🗑</button>
+      </td>
+    </tr>
+    <tr>
+      <td scope="row" data-label="Reminder"><a href="#">Return library books</a></td>
+      <td data-label="Due Date">04/06/2023</td>
+      <td data-label="Action">
+        <button type="button" class="btn btn-success">✓</button>
+        <button type="button" class="btn btn-primary">↑</button>
+        <button type="button" class="btn btn-info">↓</button>
+        <button type="button" class="btn btn-danger">🗑</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<!--Right hand side-->
+
+<div class="col">
+  <div class="foot">
+  <h3 class="text-lg-end pt-5 mt-3">Productivity</h3>
+  <h4 class="text-lg-end"><mark>7.5hr this week so far</mark></h4>
+  <p class="text-lg-end status">⤴ 43% increase compared to previous week</p>
+  <img src="./img/graph.jpg" width="350px" class="img-right">
+</div>
+</div>
+</div></div>
+
+<!--Table end-->
+
+<!--Feat 3-->
+<div class="container my-5 offset-md-1">
+  <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3">
+      <div class="col">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="./img/art.jpg" alt="art">
+  <div class="card-img-overlay">
+    <h5 class="card-title">Unlocking your creative potential</h5>
+    <a href="#" class="card-link btn btn-primary btn-large">Read more »</a>
+  </div>
+</div>
+</div>
+
+<div class="col">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="./img/notepad.jpg" alt="Notepad">
+  <div class="card-img-overlay">
+    <h5 class="card-title">7 ways to increase your productivity</h5>
+    <a href="#" class="card-link btn btn-primary btn-large">Read more »</a>
+  </div>
+</div>
+</div>
+
+<div class="col">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="./img/study.jpg" alt="Man studying">
+  <div class="card-img-overlay">
+    <h5 class="card-title">Tips to learn quickly from online classes</h5>
+    <a href="#" class="card-link btn btn-primary btn-large">Read more »</a>
+  </div>
+</div>
+</div>
+
+</div>
+</div>
+        
+<!--footer start-->
+
+<div class="container-fluid bg-light foot">
+  <footer class="py-5">
+    <div class="row row-cols-1 row-cols-sm-1 row-cols-md-4">
+      <div class="col px-5">
+        <h5>Useful links</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About us</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contact us</a></li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h5>Policies</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacy Policy</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Cookie Policy</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Terms of Use</a></li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h5>Social Media</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Facebook</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Twitter</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Instagram</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">TikTok</a></li>
+        </ul>
+      </div>
+
+      <div class="col-4 px-5">
+        <form>
+          <h5>Subscribe to our newsletter</h5>
+          <p>Monthly digest of homework tips and tricks.</p>
+          <div class="d-flex w-100 gap-2">
+            <label for="email" class="visually-hidden">Email address</label>
+            <input id="email" type="text" class="form-control" placeholder="Email address">
+            <button class="btn btn-primary" type="button">Subscribe</button>
+          </div>
+        </form>
       </div>
     </div>
-  </div>
 
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.<br class="breakpoint"/>
-      Coded by <a href="https://twitter.com/farahaly__">Farah Aly</a>.
-    </p>
+    <div class="py-4 my-4 border-top">
+      <p id="footer"><small>© 2023 Coding Cronies. All rights reserved.</small></p>
+    </div>
   </footer>
-</body>
+</div>
 
+<!--footer end-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
 </html>
